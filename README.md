@@ -1,1 +1,1 @@
-# amnesicbit.github.io
+# amnesic-bit.github.io
