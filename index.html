@@ -107,35 +107,73 @@
             color: #555;
             font-size: 0.85rem;
         }
+
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 30px;
+            padding: 6px 16px;
+            cursor: pointer;
+            z-index: 100;
+            user-select: none;
+        }
+
+        .lang-toggle .flag {
+            font-size: 1.2rem;
+            opacity: 0.4;
+            transition: opacity 0.2s;
+            line-height: 1;
+        }
+
+        .lang-toggle .flag.active {
+            opacity: 1;
+        }
+
+        .lang-toggle .switch {
+            width: 36px;
+            height: 20px;
+            background: #2a2a4a;
+            border-radius: 10px;
+            position: relative;
+            transition: background 0.2s;
+        }
+
+        .lang-toggle .switch::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: #a78bfa;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.2s;
+        }
+
+        .lang-toggle.en .switch::after {
+            transform: translateX(16px);
+        }
     </style>
 </head>
 <body>
+    <div id="home-toggle"></div>
+
     <header>
         <h1>Amnesic Bit</h1>
-        <p>Nossos jogos</p>
+        <p id="home-subtitle"></p>
     </header>
 
-    <main class="apps-grid">
-        <div class="app-card">
-            <a href="https://play.google.com/store/apps/details?id=com.amnesicbit.fartypiglet" style="text-decoration: none; color: inherit;">
-                <img src="assets/icons/porquinho_peidao.webp" alt="Porquinho Peidão" class="icon">
-                <h2>Porquinho Peidão</h2>
-                <p class="description">
-                    Bem-vindo ao mundo de Farty Piglet! Um divertido jogo estilo flappy com
-                    gráficos adoráveis e desenhados à mão. Toque na tela para fazer nosso
-                    pequeno porquinho voar através dos blocos de feno. Evite colidir com os
-                    blocos e ajude o porquinho peidorreiro a se manter vivo!
-                </p>
-                <div class="store-badge">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponível no Google Play">
-                </div>
-            </a>
-            <a href="/privacy/porquinho-peidao/" class="privacy-link">Política de Privacidade</a>
-        </div>
-    </main>
+    <main class="apps-grid" id="home-cards"></main>
 
-    <footer>
-        &copy; 2025 Amnesic Bit
-    </footer>
+    <footer id="home-footer"></footer>
+
+    <script src="shared.js"></script>
+    <script>initHomePage();</script>
 </body>
 </html>

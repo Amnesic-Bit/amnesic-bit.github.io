@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade - Farty Piglet</title>
+  <meta name="description" content="Política de Privacidade do Farty Piglet - Jogo Flappy (Amnesic Bit)." />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111827; --text:#e5e7eb; --muted:#9ca3af;
+      --border:#1f2937; --accent:#a78bfa; --link:#93c5fd;
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background:var(--bg); color:var(--text); line-height:1.6;
+    }
+    header{
+      padding:40px 16px 12px; border-bottom:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(167,139,250,.12), rgba(0,0,0,0));
+    }
+    .wrap{max-width:960px; margin:0 auto; padding:0 16px}
+    h1{margin:0 0 8px; font-size:28px}
+    .meta{color:var(--muted); margin:0}
+    main{padding:24px 0 56px}
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:14px;
+      padding:20px; margin:16px 0;
+    }
+    h2{margin:0 0 10px; font-size:20px}
+    h3{margin:18px 0 8px; font-size:16px; color:var(--text)}
+    h4{margin:14px 0 6px; font-size:14px; color:var(--text)}
+    p, li{color:var(--text)}
+    ul, ol{padding-left:20px; margin:8px 0}
+    li{margin:4px 0}
+    a{color:var(--link)}
+    code{background:rgba(255,255,255,.06); padding:.15em .35em; border-radius:6px}
+    hr{border:none; border-top:1px solid var(--border); margin:18px 0}
+    table{
+      width:100%; border-collapse:collapse; margin-top:10px; overflow:hidden; border-radius:12px;
+      border:1px solid var(--border);
+    }
+    th, td{padding:12px 10px; border-bottom:1px solid var(--border); vertical-align:top; text-align:left}
+    th{background:rgba(255,255,255,.04)}
+    tr:last-child td{border-bottom:none}
+    .badge{
+      display:inline-block; padding:2px 10px; border:1px solid rgba(167,139,250,.35);
+      border-radius:999px; color:#ddd6fe; font-size:12px; margin-left:8px;
+    }
+    .back-link{
+      display:inline-block; margin-bottom:16px; color:var(--accent); text-decoration:none;
+      font-size:14px;
+    }
+    .back-link:hover{text-decoration:underline}
+    footer{
+      border-top:1px solid var(--border); padding:20px 0; color:var(--muted); text-align:center;
+      font-size:0.85rem;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f7fb; --card:#ffffff; --text:#111827; --muted:#4b5563;
+        --border:#e5e7eb; --accent:#7c3aed; --link:#2563eb;
+      }
+      code{background:#f3f4f6}
+      header{background:linear-gradient(180deg, rgba(124,58,237,.10), rgba(255,255,255,0))}
+    }
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 6px 16px;
+      cursor: pointer;
+      z-index: 100;
+      user-select: none;
+    }
+    .lang-toggle .flag {
+      font-size: 1.2rem;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+      line-height: 1;
+    }
+    .lang-toggle .flag.active {
+      opacity: 1;
+    }
+    .lang-toggle .switch {
+      width: 36px;
+      height: 20px;
+      background: var(--border);
+      border-radius: 10px;
+      position: relative;
+      transition: background 0.2s;
+    }
+    .lang-toggle .switch::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: var(--accent);
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.2s;
+    }
+    .lang-toggle.en .switch::after {
+      transform: translateX(16px);
+    }
+    .content-en { display: none; }
+  </style>
+</head>
+<body>
+  <div id="privacy-toggle"></div>
+  <div id="privacy-header"></div>
+
+  <div class="content-pt">
+  <main class="wrap">
+
+    <section class="card" id="introduction">
+      <h2>1. Introdução</h2>
+      <p>
+        Esta Política de Privacidade descreve como o Farty Piglet ("nós", "nosso" ou "aplicativo") coleta, usa, armazena e protege suas informações quando você utiliza nosso jogo. O Farty Piglet é um jogo casual estilo flappy com gráficos desenhados à mão. O app não requer cadastro ou login.
+      </p>
+      <p>
+        Ao usar o Farty Piglet, você concorda com a coleta e uso de informações de acordo com esta política.
+      </p>
+      <p>
+        <strong>Idade mínima:</strong> 13 anos.
+      </p>
+    </section>
+
+    <section class="card" id="information-we-collect">
+      <h2>2. Informações que Coletamos</h2>
+
+      <h3>2.1 Informações Armazenadas Localmente</h3>
+      <p>O Farty Piglet armazena dados localmente no seu dispositivo:</p>
+      <ul>
+        <li><strong>Dados técnicos:</strong> Informações básicas do dispositivo necessárias para exibição de anúncios</li>
+      </ul>
+      <p>O Farty Piglet <strong>NÃO</strong> coleta:</p>
+      <ul>
+        <li>Nome, email ou dados pessoais</li>
+        <li>Pontuações ou progresso do jogo em servidores remotos</li>
+        <li>Nenhum dado de identificação pessoal</li>
+      </ul>
+
+      <h3>2.2 Informações de Terceiros</h3>
+
+      <h4>Google AdMob (Anúncios em Banner)</h4>
+      <ul>
+        <li>ID de publicidade do dispositivo (IDFA/AAID)</li>
+        <li>Endereço IP</li>
+        <li>Dados de interação com anúncios</li>
+        <li>Informações do dispositivo e navegador</li>
+        <li>Dados de geolocalização aproximada</li>
+      </ul>
+
+      <h4>Google Play Store</h4>
+      <ul>
+        <li><strong>Dados de Uso:</strong> Coletados pela Google como provedora da plataforma</li>
+      </ul>
+    </section>
+
+    <section class="card" id="how-we-use">
+      <h2>3. Como Usamos as Informações</h2>
+
+      <h3>3.1 Finalidades Principais</h3>
+      <ul>
+        <li><strong>Exibir anúncios:</strong> O Google AdMob exibe banners publicitários para monetização do jogo</li>
+      </ul>
+
+      <h3>3.2 Base Legal (LGPD/GDPR)</h3>
+      <ul>
+        <li><strong>Consentimento:</strong> Ao usar o aplicativo e aceitar esta política, você consente com o processamento de seus dados</li>
+        <li><strong>Interesses legítimos:</strong> Manter e melhorar nossos serviços</li>
+      </ul>
+    </section>
+
+    <section class="card" id="sharing">
+      <h2>4. Compartilhamento de Informações</h2>
+
+      <h3>4.1 Serviços de Terceiros</h3>
+
+      <h4>Google AdMob (Anúncios em Banner)</h4>
+      <ul>
+        <li><strong>Dados compartilhados:</strong> ID de publicidade, informações do dispositivo, dados de interação</li>
+        <li><strong>Finalidade:</strong> Exibir anúncios em banner e medir eficácia</li>
+        <li><strong>Política:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        <li><strong>Personalização de anúncios:</strong> Você pode desativar anúncios personalizados nas configurações do seu dispositivo</li>
+      </ul>
+
+      <h4>Google Play Store</h4>
+      <ul>
+        <li><strong>Dados compartilhados:</strong> Dados de Uso</li>
+        <li><strong>Finalidade:</strong> Distribuição do aplicativo e coleta de dados de uso e diagnóstico</li>
+        <li><strong>Política:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+      </ul>
+
+      <h3>4.2 Transferência Internacional de Dados</h3>
+      <p>Seus dados podem ser transferidos e processados em servidores localizados fora do Brasil, incluindo:</p>
+      <ul>
+        <li>Estados Unidos (Google AdMob, Google Play)</li>
+      </ul>
+      <p>
+        Garantimos que essas transferências são realizadas com salvaguardas adequadas, incluindo cláusulas contratuais padrão e conformidade com GDPR.
+      </p>
+
+      <h3>4.3 Situações Legais</h3>
+      <p>Podemos divulgar suas informações se:</p>
+      <ul>
+        <li>Exigido por lei ou processo legal</li>
+        <li>Para proteger nossos direitos, propriedade ou segurança</li>
+        <li>Para prevenir fraudes ou atividades ilegais</li>
+      </ul>
+    </section>
+
+    <section class="card" id="storage-security">
+      <h2>5. Armazenamento e Segurança de Dados</h2>
+
+      <h3>5.1 Armazenamento Local</h3>
+      <ul>
+        <li><strong>Dados técnicos:</strong> Armazenados localmente no seu dispositivo via <code>SharedPreferences</code>, protegido pelo sistema operacional</li>
+      </ul>
+
+      <h3>5.2 Sem Armazenamento em Servidor</h3>
+      <p>O Farty Piglet <strong>NÃO</strong> possui servidor próprio. Todos os dados são processados localmente no seu dispositivo.</p>
+
+      <h3>5.3 Retenção de Dados</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de Dado</th>
+            <th>Período de Retenção</th>
+            <th>Localização</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dados do AdMob</td>
+            <td>Conforme política do Google</td>
+            <td>Servidores Google</td>
+          </tr>
+          <tr>
+            <td>Dados do Google Play</td>
+            <td>Conforme política do Google</td>
+            <td>Servidores Google</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="your-rights">
+      <h2>6. Seus Direitos (LGPD e GDPR)</h2>
+
+      <h3>6.1 Direitos Garantidos</h3>
+      <ul>
+        <li><strong>Acesso:</strong> Solicitar cópias dos seus dados pessoais</li>
+        <li><strong>Exclusão:</strong> Solicitar a exclusão dos seus dados ("direito ao esquecimento")</li>
+        <li><strong>Oposição:</strong> Opor-se ao processamento de seus dados</li>
+        <li><strong>Revogação de consentimento:</strong> Retirar seu consentimento a qualquer momento</li>
+      </ul>
+
+      <h3>6.2 Como Exercer Seus Direitos</h3>
+      <p>
+        Para exercer qualquer um desses direitos, envie um email para:
+        <strong><a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a></strong>
+      </p>
+      <p>Responderemos sua solicitação em até <strong>15 dias úteis</strong> (conforme LGPD).</p>
+
+      <h3>6.3 Desativar Anúncios Personalizados</h3>
+      <p><strong>Android:</strong></p>
+      <ol>
+        <li>Configurações &gt; Google &gt; Anúncios</li>
+        <li>Ative "Desativar personalização de anúncios"</li>
+      </ol>
+      <p><strong>iOS:</strong></p>
+      <ol>
+        <li>Configurações &gt; Privacidade &gt; Publicidade</li>
+        <li>Ative "Limitar rastreamento de anúncios"</li>
+      </ol>
+    </section>
+
+    <section class="card" id="cookies-tracking">
+      <h2>7. Cookies e Tecnologias de Rastreamento</h2>
+
+      <h3>7.1 Cookies de Terceiros</h3>
+      <p>O Google AdMob pode usar cookies e tecnologias similares (web beacons, pixels) para:</p>
+      <ul>
+        <li>Exibir anúncios relevantes</li>
+        <li>Medir eficácia de anúncios</li>
+        <li>Detectar fraudes</li>
+      </ul>
+      <p>Você pode gerenciar cookies nas configurações do seu navegador ou dispositivo.</p>
+
+      <h3>7.2 Identificadores de Dispositivo</h3>
+      <ul>
+        <li><strong>Android:</strong> Google Advertising ID (GAID)</li>
+        <li><strong>iOS:</strong> Identifier for Advertisers (IDFA)</li>
+      </ul>
+      <p>Esses identificadores podem ser redefinidos nas configurações de privacidade do seu dispositivo.</p>
+    </section>
+
+    <section class="card" id="no-registration">
+      <h2>8. Sem Cadastro ou Conta</h2>
+      <p>
+        O Farty Piglet não requer e não oferece cadastro, login ou criação de conta. Não coletamos email, nome, telefone ou qualquer informação de identificação pessoal. Todo o progresso do jogo é processado localmente no seu dispositivo.
+      </p>
+    </section>
+
+    <section class="card" id="external-links">
+      <h2>9. Links Externos</h2>
+      <p>
+        O aplicativo pode conter links para sites ou serviços de terceiros (como políticas de privacidade do Google). Não somos responsáveis pelas práticas de privacidade desses sites. Recomendamos que você leia as políticas de privacidade de qualquer site que visitar.
+      </p>
+    </section>
+
+    <section class="card" id="changes">
+      <h2>10. Alterações nesta Política</h2>
+      <p>Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre mudanças significativas:</p>
+      <ul>
+        <li>Publicando a nova política dentro do aplicativo</li>
+        <li>Atualizando a data "Última atualização" no topo deste documento</li>
+      </ul>
+      <p>O uso continuado do aplicativo após alterações constitui aceitação da política atualizada.</p>
+    </section>
+
+    <section class="card" id="security">
+      <h2>11. Segurança de Dados</h2>
+
+      <h3>11.1 Medidas Técnicas</h3>
+      <ul>
+        <li><strong>Criptografia em repouso:</strong> Dados do dispositivo protegidos pelo sistema operacional</li>
+        <li><strong>Sem servidor próprio:</strong> Nenhum dado é transmitido para servidores do desenvolvedor</li>
+      </ul>
+
+      <h3>11.2 Limitações</h3>
+      <p>
+        Nenhum método de transmissão pela Internet ou armazenamento eletrônico é 100% seguro. Embora nos esforcemos para proteger seus dados, não podemos garantir segurança absoluta.
+      </p>
+    </section>
+
+    <section class="card" id="children">
+      <h2>12. Dados de Menores de Idade</h2>
+      <p><strong>Este aplicativo não é direcionado a crianças menores de 13 anos.</strong></p>
+      <p>
+        Não coletamos intencionalmente informações pessoais de menores de 13 anos. Se você é pai/mãe ou responsável e acredita que seu filho forneceu dados pessoais, entre em contato conosco em
+        <strong><a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a></strong> para que possamos tomar as medidas apropriadas.
+      </p>
+      <p><strong>Usuários entre 13-18 anos:</strong> Recomendamos que menores de 18 anos obtenham permissão dos pais ou responsáveis antes de usar o aplicativo.</p>
+    </section>
+
+    <section class="card" id="jurisdiction">
+      <h2>13. Jurisdição e Lei Aplicável</h2>
+
+      <h3>13.1 Usuários no Brasil</h3>
+      <p>Esta política é regida pela Lei Geral de Proteção de Dados (LGPD - Lei 13.709/2018).</p>
+
+      <h3>13.2 Usuários na União Europeia</h3>
+      <p>Para usuários na UE, esta política também está em conformidade com o Regulamento Geral de Proteção de Dados (GDPR).</p>
+
+      <h3>13.3 Reclamações</h3>
+      <p>Você tem o direito de registrar uma reclamação junto à:</p>
+      <ul>
+        <li><strong>Brasil:</strong> Autoridade Nacional de Proteção de Dados (ANPD) - <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">https://www.gov.br/anpd</a></li>
+        <li><strong>UE:</strong> Autoridade de proteção de dados do seu país</li>
+      </ul>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>14. Contato</h2>
+      <p>Se você tiver dúvidas, preocupações ou solicitações relacionadas a esta Política de Privacidade ou ao tratamento de seus dados pessoais, entre em contato:</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a><br/>
+        <strong>Desenvolvedor:</strong> Amnesic Bit<br/>
+        <strong>Aplicativo:</strong> Farty Piglet - Jogo Flappy
+      </p>
+      <p>Responderemos suas solicitações em até 15 dias úteis.</p>
+    </section>
+
+    <section class="card" id="tldr">
+      <h2>15. Resumo Rápido (TL;DR)</h2>
+
+      <p><strong>O que coletamos:</strong></p>
+      <ul>
+        <li>Nenhum dado pessoal (sem cadastro, sem login)</li>
+        <li>Dados do AdMob (ID de publicidade, IP)</li>
+      </ul>
+
+      <p><strong>Como usamos:</strong></p>
+      <ul>
+        <li>Exibir anúncios em banner</li>
+      </ul>
+
+      <p><strong>O que NÃO fazemos:</strong></p>
+      <ul>
+        <li>Não coletamos dados do jogo</li>
+        <li>Não temos servidor próprio</li>
+        <li>Não exigimos cadastro</li>
+        <li>Não compartilhamos dados pessoais</li>
+      </ul>
+
+      <p><strong>Contato:</strong> <a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a></p>
+    </section>
+
+  </main>
+  </div>
+
+  <div class="content-en">
+  <main class="wrap">
+
+    <section class="card" id="introduction-en">
+      <h2>1. Introduction</h2>
+      <p>
+        This Privacy Policy describes how Farty Piglet ("we", "our" or "application") collects, uses, stores and protects your information when you use our game. Farty Piglet is a casual flappy-style game with hand-drawn graphics. The app does not require registration or login.
+      </p>
+      <p>
+        By using Farty Piglet, you agree to the collection and use of information in accordance with this policy.
+      </p>
+      <p>
+        <strong>Minimum age:</strong> 13.
+      </p>
+    </section>
+
+    <section class="card" id="information-we-collect-en">
+      <h2>2. Information We Collect</h2>
+
+      <h3>2.1 Locally Stored Information</h3>
+      <p>Farty Piglet stores data locally on your device:</p>
+      <ul>
+        <li><strong>Technical data:</strong> Basic device information required for ad display</li>
+      </ul>
+      <p>Farty Piglet does <strong>NOT</strong> collect:</p>
+      <ul>
+        <li>Name, email or personal data</li>
+        <li>Game scores or progress on remote servers</li>
+        <li>Any personally identifiable data</li>
+      </ul>
+
+      <h3>2.2 Third-Party Information</h3>
+
+      <h4>Google AdMob (Banner Ads)</h4>
+      <ul>
+        <li>Device advertising ID (IDFA/AAID)</li>
+        <li>IP address</li>
+        <li>Ad interaction data</li>
+        <li>Device and browser information</li>
+        <li>Approximate geolocation data</li>
+      </ul>
+
+      <h4>Google Play Store</h4>
+      <ul>
+        <li><strong>Usage Data:</strong> Collected by Google as the platform provider</li>
+      </ul>
+    </section>
+
+    <section class="card" id="how-we-use-en">
+      <h2>3. How We Use the Information</h2>
+
+      <h3>3.1 Main Purposes</h3>
+      <ul>
+        <li><strong>Display ads:</strong> Google AdMob displays banner ads for game monetization</li>
+      </ul>
+
+      <h3>3.2 Legal Basis (LGPD/GDPR)</h3>
+      <ul>
+        <li><strong>Consent:</strong> By using the application and accepting this policy, you consent to the processing of your data</li>
+        <li><strong>Legitimate interests:</strong> Maintaining and improving our services</li>
+      </ul>
+    </section>
+
+    <section class="card" id="sharing-en">
+      <h2>4. Information Sharing</h2>
+
+      <h3>4.1 Third-Party Services</h3>
+
+      <h4>Google AdMob (Banner Ads)</h4>
+      <ul>
+        <li><strong>Data shared:</strong> Advertising ID, device information, interaction data</li>
+        <li><strong>Purpose:</strong> Display banner ads and measure effectiveness</li>
+        <li><strong>Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        <li><strong>Ad personalization:</strong> You can disable personalized ads in your device settings</li>
+      </ul>
+
+      <h4>Google Play Store</h4>
+      <ul>
+        <li><strong>Data shared:</strong> Usage Data</li>
+        <li><strong>Purpose:</strong> Application distribution and collection of usage and diagnostic data</li>
+        <li><strong>Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+      </ul>
+
+      <h3>4.2 International Data Transfer</h3>
+      <p>Your data may be transferred and processed on servers located outside Brazil, including:</p>
+      <ul>
+        <li>United States (Google AdMob, Google Play)</li>
+      </ul>
+      <p>
+        We ensure these transfers are carried out with adequate safeguards, including standard contractual clauses and GDPR compliance.
+      </p>
+
+      <h3>4.3 Legal Situations</h3>
+      <p>We may disclose your information if:</p>
+      <ul>
+        <li>Required by law or legal process</li>
+        <li>To protect our rights, property or safety</li>
+        <li>To prevent fraud or illegal activities</li>
+      </ul>
+    </section>
+
+    <section class="card" id="storage-security-en">
+      <h2>5. Data Storage and Security</h2>
+
+      <h3>5.1 Local Storage</h3>
+      <ul>
+        <li><strong>Technical data:</strong> Stored locally on your device via <code>SharedPreferences</code>, protected by the operating system</li>
+      </ul>
+
+      <h3>5.2 No Server Storage</h3>
+      <p>Farty Piglet does <strong>NOT</strong> have its own server. All data is processed locally on your device.</p>
+
+      <h3>5.3 Data Retention</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Retention Period</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AdMob data</td>
+            <td>According to Google's policy</td>
+            <td>Google servers</td>
+          </tr>
+          <tr>
+            <td>Google Play data</td>
+            <td>According to Google's policy</td>
+            <td>Google servers</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="your-rights-en">
+      <h2>6. Your Rights (LGPD and GDPR)</h2>
+
+      <h3>6.1 Guaranteed Rights</h3>
+      <ul>
+        <li><strong>Access:</strong> Request copies of your personal data</li>
+        <li><strong>Deletion:</strong> Request deletion of your data ("right to be forgotten")</li>
+        <li><strong>Opposition:</strong> Object to the processing of your data</li>
+        <li><strong>Consent revocation:</strong> Withdraw your consent at any time</li>
+      </ul>
+
+      <h3>6.2 How to Exercise Your Rights</h3>
+      <p>
+        To exercise any of these rights, send an email to:
+        <strong><a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a></strong>
+      </p>
+      <p>We will respond to your request within <strong>15 business days</strong> (as per LGPD).</p>
+
+      <h3>6.3 Disable Personalized Ads</h3>
+      <p><strong>Android:</strong></p>
+      <ol>
+        <li>Settings &gt; Google &gt; Ads</li>
+        <li>Enable "Opt out of ads personalization"</li>
+      </ol>
+      <p><strong>iOS:</strong></p>
+      <ol>
+        <li>Settings &gt; Privacy &gt; Advertising</li>
+        <li>Enable "Limit Ad Tracking"</li>
+      </ol>
+    </section>
+
+    <section class="card" id="cookies-tracking-en">
+      <h2>7. Cookies and Tracking Technologies</h2>
+
+      <h3>7.1 Third-Party Cookies</h3>
+      <p>Google AdMob may use cookies and similar technologies (web beacons, pixels) to:</p>
+      <ul>
+        <li>Display relevant ads</li>
+        <li>Measure ad effectiveness</li>
+        <li>Detect fraud</li>
+      </ul>
+      <p>You can manage cookies in your browser or device settings.</p>
+
+      <h3>7.2 Device Identifiers</h3>
+      <ul>
+        <li><strong>Android:</strong> Google Advertising ID (GAID)</li>
+        <li><strong>iOS:</strong> Identifier for Advertisers (IDFA)</li>
+      </ul>
+      <p>These identifiers can be reset in your device's privacy settings.</p>
+    </section>
+
+    <section class="card" id="no-registration-en">
+      <h2>8. No Registration or Account</h2>
+      <p>
+        Farty Piglet does not require and does not offer registration, login or account creation. We do not collect email, name, phone number or any personally identifiable information. All game progress is processed locally on your device.
+      </p>
+    </section>
+
+    <section class="card" id="external-links-en">
+      <h2>9. External Links</h2>
+      <p>
+        The application may contain links to third-party websites or services (such as Google privacy policies). We are not responsible for the privacy practices of these sites. We recommend that you read the privacy policies of any site you visit.
+      </p>
+    </section>
+
+    <section class="card" id="changes-en">
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy periodically. We will notify you of significant changes by:</p>
+      <ul>
+        <li>Publishing the new policy within the application</li>
+        <li>Updating the "Last updated" date at the top of this document</li>
+      </ul>
+      <p>Continued use of the application after changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section class="card" id="security-en">
+      <h2>11. Data Security</h2>
+
+      <h3>11.1 Technical Measures</h3>
+      <ul>
+        <li><strong>Encryption at rest:</strong> Device data protected by the operating system</li>
+        <li><strong>No own server:</strong> No data is transmitted to the developer's servers</li>
+      </ul>
+
+      <h3>11.2 Limitations</h3>
+      <p>
+        No method of transmission over the Internet or electronic storage is 100% secure. Although we strive to protect your data, we cannot guarantee absolute security.
+      </p>
+    </section>
+
+    <section class="card" id="children-en">
+      <h2>12. Minor's Data</h2>
+      <p><strong>This application is not directed at children under 13 years of age.</strong></p>
+      <p>
+        We do not intentionally collect personal information from children under 13. If you are a parent or guardian and believe your child has provided personal data, please contact us at
+        <strong><a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a></strong> so we can take appropriate action.
+      </p>
+      <p><strong>Users between 13-18 years:</strong> We recommend that minors under 18 obtain permission from parents or guardians before using the application.</p>
+    </section>
+
+    <section class="card" id="jurisdiction-en">
+      <h2>13. Jurisdiction and Applicable Law</h2>
+
+      <h3>13.1 Users in Brazil</h3>
+      <p>This policy is governed by the General Data Protection Law (LGPD - Law 13,709/2018).</p>
+
+      <h3>13.2 Users in the European Union</h3>
+      <p>For EU users, this policy also complies with the General Data Protection Regulation (GDPR).</p>
+
+      <h3>13.3 Complaints</h3>
+      <p>You have the right to file a complaint with:</p>
+      <ul>
+        <li><strong>Brazil:</strong> National Data Protection Authority (ANPD) - <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">https://www.gov.br/anpd</a></li>
+        <li><strong>EU:</strong> Data protection authority of your country</li>
+      </ul>
+    </section>
+
+    <section class="card" id="contact-en">
+      <h2>14. Contact</h2>
+      <p>If you have questions, concerns or requests related to this Privacy Policy or the processing of your personal data, please contact:</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a><br/>
+        <strong>Developer:</strong> Amnesic Bit<br/>
+        <strong>Application:</strong> Farty Piglet - Flappy Game
+      </p>
+      <p>We will respond to your requests within 15 business days.</p>
+    </section>
+
+    <section class="card" id="tldr-en">
+      <h2>15. Quick Summary (TL;DR)</h2>
+
+      <p><strong>What we collect:</strong></p>
+      <ul>
+        <li>No personal data (no registration, no login)</li>
+        <li>AdMob data (advertising ID, IP)</li>
+      </ul>
+
+      <p><strong>How we use it:</strong></p>
+      <ul>
+        <li>Display banner ads</li>
+      </ul>
+
+      <p><strong>What we do NOT do:</strong></p>
+      <ul>
+        <li>We do not collect game data</li>
+        <li>We do not have our own server</li>
+        <li>We do not require registration</li>
+        <li>We do not share personal data</li>
+      </ul>
+
+      <p><strong>Contact:</strong> <a href="mailto:amnesic.bit@gmail.com">amnesic.bit@gmail.com</a></p>
+    </section>
+
+  </main>
+  </div>
+
+  <footer>
+    <div class="wrap" id="privacy-footer"></div>
+  </footer>
+
+  <script src="../../shared.js"></script>
+  <script>initPrivacyPage('fartypiglet');</script>
+</body>
+</html>
