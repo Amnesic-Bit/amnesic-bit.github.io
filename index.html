@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amnesic Bit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 12px;
+            font-size: 1.1rem;
+            color: #888;
+        }
+
+        .apps-grid {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .app-card {
+            background: #1a1a2e;
+            border-radius: 20px;
+            padding: 36px 28px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #2a2a4a;
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(100, 80, 200, 0.15);
+        }
+
+        .app-card .icon {
+            width: 140px;
+            height: 140px;
+            border-radius: 28px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .app-card h2 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .app-card .description {
+            font-size: 0.95rem;
+            color: #aaa;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .app-card .store-badge {
+            display: inline-block;
+        }
+
+        .app-card .store-badge img {
+            height: 48px;
+        }
+
+        .app-card .privacy-link {
+            display: block;
+            margin-top: 12px;
+            font-size: 0.8rem;
+            color: #666;
+            text-decoration: none;
+        }
+
+        .app-card .privacy-link:hover {
+            color: #a78bfa;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: #555;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amnesic Bit</h1>
+        <p>Nossos jogos</p>
+    </header>
+
+    <main class="apps-grid">
+        <div class="app-card">
+            <a href="https://play.google.com/store/apps/details?id=com.amnesicbit.fartypiglet" style="text-decoration: none; color: inherit;">
+                <img src="assets/icons/porquinho_peidao.webp" alt="Porquinho Peidão" class="icon">
+                <h2>Porquinho Peidão</h2>
+                <p class="description">
+                    Bem-vindo ao mundo de Farty Piglet! Um divertido jogo estilo flappy com
+                    gráficos adoráveis e desenhados à mão. Toque na tela para fazer nosso
+                    pequeno porquinho voar através dos blocos de feno. Evite colidir com os
+                    blocos e ajude o porquinho peidorreiro a se manter vivo!
+                </p>
+                <div class="store-badge">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponível no Google Play">
+                </div>
+            </a>
+            <a href="/privacy/porquinho-peidao/" class="privacy-link">Política de Privacidade</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Amnesic Bit
+    </footer>
+</body>
+</html>
