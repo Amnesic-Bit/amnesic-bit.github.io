@@ -1,7 +1,7 @@
 var SITE = {
     developer: 'Amnesic Bit',
     owner: 'Leonardo Lamas',
-    email: 'amnesic.bit@gmail.com',
+    email: 'contact@amnesicbit.com',
     copyright: '2025',
     subtitle: { pt: 'Nossos jogos', en: 'Our games' },
     privacyLink: { pt: 'Política de Privacidade', en: 'Privacy Policy' },
