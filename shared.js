@@ -16,8 +16,8 @@ var SITE_APPS = {
         appFullName: { pt: 'Farty Piglet - Jogo Flappy', en: 'Farty Piglet - Flappy Game' },
         lastUpdated: { pt: '17 de fevereiro de 2024', en: 'February 17, 2024' },
         description: {
-            pt: 'Bem-vindo ao mundo do Porquinho Peidão! Um divertido jogo estilo flappy com gráficos adoráveis e desenhados à mão. Toque na tela para fazer nosso pequeno porquinho voar através dos blocos de feno. Evite colidir com os blocos e ajude o porquinho peidorreiro a se manter vivo!',
-            en: 'Welcome to the world of Farty Piglet! A fun flappy-style game with adorable hand-drawn graphics. Tap the screen to make our little piglet fly through the hay blocks. Avoid hitting the blocks and help the farty piglet stay alive!'
+            pt: 'Divertido jogo estilo flappy com gráficos adoráveis desenhados à mão. Toque na tela para o porquinho voar entre os blocos de feno e mantê-lo vivo!',
+            en: 'A fun flappy-style game with adorable hand-drawn graphics. Tap to fly the piglet through the hay blocks and keep it alive!'
         },
         storeUrl: 'https://play.google.com/store/apps/details?id=com.amnesicbit.fartypiglet',
         icon: 'assets/icons/porquinho_peidao.webp',
@@ -90,14 +90,15 @@ function renderHomeCards() {
     Object.keys(SITE_APPS).forEach(function(key) {
         var app = SITE_APPS[key];
         html += '<div class="app-card">' +
-            '<a href="' + app.storeUrl + '" style="text-decoration: none; color: inherit;">' +
+            '<a href="' + app.storeUrl + '" class="card-link" style="text-decoration: none; color: inherit;">' +
             '<img src="' + app.icon + '" alt="' + app.appName.en + '" class="icon">' +
             '<h2 data-pt="' + app.appName.pt + '" data-en="' + app.appName.en + '">' + app.appName.pt + '</h2>' +
             '<p class="description" data-pt="' + app.description.pt + '" data-en="' + app.description.en + '">' + app.description.pt + '</p>' +
-            '<div class="store-badge">' +
-            '<img src="' + storeBadge + '" data-pt-alt="' + SITE.storeBadgeAlt.pt + '" data-en-alt="' + SITE.storeBadgeAlt.en + '" alt="' + SITE.storeBadgeAlt.pt + '">' +
-            '</div></a>' +
+            '</a>' +
             '<a href="' + app.privacyPath + '" class="privacy-link" data-pt="' + SITE.privacyLink.pt + '" data-en="' + SITE.privacyLink.en + '">' + SITE.privacyLink.pt + '</a>' +
+            '<a href="' + app.storeUrl + '" class="store-badge">' +
+            '<img src="' + storeBadge + '" data-pt-alt="' + SITE.storeBadgeAlt.pt + '" data-en-alt="' + SITE.storeBadgeAlt.en + '" alt="' + SITE.storeBadgeAlt.pt + '">' +
+            '</a>' +
             '</div>';
     });
     return html;
